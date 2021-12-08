@@ -14,13 +14,13 @@ Signature is a mathematical invariant of paths introduced in the work of Terry L
 
 Classifiers currently in this repository: 
 
-SelectConvSigRNNBase - a basic algorithm that uses depthwise convolutio on all (unstructured) joints and signature+LSTM for temporal analysis. 
+RNNBase - a basic algorithm that uses depthwise convolutio on all (unstructured) joints and signature+LSTM for temporal analysis. 
 
-SelectConvSigRNNJB  - adds Graph Convolution on joints and bones spatially to achieve performance comparable with state-of-the-art methods mentioned in the article by the dataset authors.
+RNNJB  - adds Graph Convolution on joints and bones spatially to achieve performance comparable with state-of-the-art methods mentioned in the article by the dataset authors.
 
 SkeletalFeatureChoice- a group of algorithms that searches for additional features to aid in classification. TriplesChoiceRNN chooses triples of joints that are important for classification by using convolution on the set of all triples and l1-regularisation. ROCTriplesRNN uses AUC ROC metric on pairs of classes.
 
-SelectConvSigRNNStreams - classifies using selected triples data.
+RNNStreams - classifies using selected triples data.
 
 TeacherStudent - UAVHuman train and test set are inherently problematic since they appear to represent different distributions (i.e mixing them and splitting test set off at random increases accuracy). We experiment with the teacher-student paradigm in an attempt to compensate for this.
 
